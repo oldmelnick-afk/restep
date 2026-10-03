@@ -8,6 +8,8 @@ ReStep is a DIY app for Rokid RG-glasses and companion apps for iPhone and Andro
 
 ![Illustrative workshop demo](design/promo/workshop-demo.png)
 
+[Full project guide (PDF)](docs/ReStep-Project-Guide.pdf) - controls, setup, sync, screenshots and current limitations.
+
 ## Capture without using your hands
 
 - Offline Russian and English voice commands: “сделать фото” / “take photo”, then “отправить” / “send” / “send note”. Pause briefly before the save command.
