@@ -1,0 +1,13 @@
+.gradle/
+build/
+app/build/
+app/src/main/assets/model-ru/
+app/src/main/assets/model-en/
+ios/build/
+ios/build-checks/
+ios/deletion-checks.log
+ios/release/
+verification/
+releases/
+*.iml
+local.properties

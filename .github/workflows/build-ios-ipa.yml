@@ -1,0 +1,17 @@
+name: iPhone IPA
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build unsigned IPA
+        run: bash ios/build-unsigned-ipa.sh
+      - name: Verify deletion on iPhone simulator
+        run: bash ios/check-deletion.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ReStep-unsigned-ipa
+          path: ios/release/*.ipa

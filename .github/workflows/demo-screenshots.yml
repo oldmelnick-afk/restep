@@ -1,0 +1,13 @@
+name: Capture iPhone demo screens
+on: workflow_dispatch
+jobs:
+  screenshots:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash ios/capture-demo.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: restep-iphone-demo
+          path: ios/demo-screenshots/*.png

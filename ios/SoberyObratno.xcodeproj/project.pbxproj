@@ -1,0 +1,99 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+    A00000000000000000000001 = { isa = PBXBuildFile; fileRef = A00000000000000000000011; };
+    A00000000000000000000002 = { isa = PBXBuildFile; fileRef = A00000000000000000000012; };
+    A00000000000000000000003 = { isa = PBXBuildFile; fileRef = A00000000000000000000013; };
+    A00000000000000000000004 = { isa = PBXBuildFile; fileRef = A00000000000000000000014; };
+    A00000000000000000000006 = { isa = PBXBuildFile; fileRef = A00000000000000000000018; };
+    A00000000000000000000018 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesConnection.swift; sourceTree = "<group>"; };
+    A00000000000000000000007 = { isa = PBXBuildFile; fileRef = A00000000000000000000019; };
+    A00000000000000000000019 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletionChecks.swift; sourceTree = "<group>"; };
+    A00000000000000000000005 = { isa = PBXBuildFile; fileRef = A00000000000000000000017; };
+    A00000000000000000000011 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoberyObratnoApp.swift; sourceTree = "<group>"; };
+    A00000000000000000000012 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+    A00000000000000000000013 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLibrary.swift; sourceTree = "<group>"; };
+    A00000000000000000000014 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+    A00000000000000000000015 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+    A00000000000000000000016 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoberyObratno.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    A00000000000000000000017 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+    A00000000000000000000020 = {
+      isa = PBXGroup;
+      children = (A00000000000000000000022, A00000000000000000000021);
+      sourceTree = "<group>";
+    };
+    A00000000000000000000021 = { isa = PBXGroup; children = (A00000000000000000000016); name = Products; sourceTree = "<group>"; };
+    A00000000000000000000022 = {
+      isa = PBXGroup;
+      children = (A00000000000000000000011, A00000000000000000000012,
+        A00000000000000000000013, A00000000000000000000014, A00000000000000000000015, A00000000000000000000017, A00000000000000000000018, A00000000000000000000019);
+      path = SoberyObratno;
+      sourceTree = "<group>";
+    };
+    A00000000000000000000030 = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = A00000000000000000000050;
+      buildPhases = (A00000000000000000000031, A00000000000000000000032);
+      buildRules = ();
+      dependencies = ();
+      name = SoberyObratno;
+      productName = SoberyObratno;
+      productReference = A00000000000000000000016;
+      productType = "com.apple.product-type.application";
+    };
+    A00000000000000000000031 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000001, A00000000000000000000002, A00000000000000000000003, A00000000000000000000004, A00000000000000000000006, A00000000000000000000007); runOnlyForDeploymentPostprocessing = 0; };
+    A00000000000000000000032 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000005); runOnlyForDeploymentPostprocessing = 0; };
+    A00000000000000000000040 = {
+      isa = PBXProject;
+      attributes = {
+        BuildIndependentTargetsInParallel = 1;
+        LastUpgradeCheck = 1600;
+        TargetAttributes = { A00000000000000000000030 = { CreatedOnToolsVersion = 16.0; }; };
+      };
+      buildConfigurationList = A00000000000000000000051;
+      compatibilityVersion = "Xcode 14.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (ru, en, Base);
+      mainGroup = A00000000000000000000020;
+      productRefGroup = A00000000000000000000021;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (A00000000000000000000030,);
+    };
+    A00000000000000000000050 = { isa = XCConfigurationList; buildConfigurations = (A00000000000000000000060, A00000000000000000000061); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+    A00000000000000000000051 = { isa = XCConfigurationList; buildConfigurations = (A00000000000000000000062, A00000000000000000000063); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+    A00000000000000000000060 = { isa = XCBuildConfiguration; buildSettings = {
+      ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+      ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+      CODE_SIGN_STYLE = Automatic;
+      GENERATE_INFOPLIST_FILE = NO;
+      INFOPLIST_FILE = SoberyObratno/Info.plist;
+      IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+      PRODUCT_BUNDLE_IDENTIFIER = com.rocketglasses.soberyobratno;
+      PRODUCT_NAME = "$(TARGET_NAME)";
+      SDKROOT = iphoneos;
+      SWIFT_VERSION = 5.0;
+      TARGETED_DEVICE_FAMILY = 1;
+    }; name = Debug; };
+    A00000000000000000000061 = { isa = XCBuildConfiguration; buildSettings = {
+      ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+      ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+      CODE_SIGN_STYLE = Automatic;
+      GENERATE_INFOPLIST_FILE = NO;
+      INFOPLIST_FILE = SoberyObratno/Info.plist;
+      IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+      PRODUCT_BUNDLE_IDENTIFIER = com.rocketglasses.soberyobratno;
+      PRODUCT_NAME = "$(TARGET_NAME)";
+      SDKROOT = iphoneos;
+      SWIFT_VERSION = 5.0;
+      TARGETED_DEVICE_FAMILY = 1;
+    }; name = Release; };
+    A00000000000000000000062 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+    A00000000000000000000063 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+  };
+  rootObject = A00000000000000000000040;
+}
