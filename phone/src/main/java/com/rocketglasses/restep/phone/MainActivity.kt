@@ -29,6 +29,7 @@ class MainActivity: Activity() {
     private val accent = Color.rgb(0,125,115)
     override fun onCreate(state: Bundle?) {
         super.onCreate(state)
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR or View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
         library = sharedLibrary ?: Library(filesDir).also { sharedLibrary = it }
         link = GlassesLink(this, { text -> message.text = text }, { network, info -> sync(network, info.getString("host"),info.getString("token")) })
         render()
